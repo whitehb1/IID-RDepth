@@ -15,3 +15,14 @@ Abstract: *Monocular Depth Estimation (MDE) is a fundamental computer vision tas
 <p align="center">
     <img src="error_map.png">
 </p>
+
+
+## Method
+
+Overview of the proposed IID-RDepth. The input image is first processed through a frozen encoder to extract the multi-level features. Then the
+high-level semantic features are combined as mutual conditional maps and fed into the InvT-IndDiffusion for restoration. For low-level detail features, AV-LFE
+is used as a plug-and-play module to enhance the identity connection when auxiliary viewpoint is available.
+<p align="center">
+    <img src="method.png">
+</p>
+
